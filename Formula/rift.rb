@@ -5,21 +5,21 @@
 class Rift < Formula
   desc "Rift — ephemeral developer workspaces CLI"
   homepage "https://github.com/fixed-labs/oss"
-  version "0.1.3"
+  version "0.1.4"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/fixed-labs/oss/releases/download/v0.1.3/rift_0.1.3_darwin_amd64.tar.gz"
-      sha256 "4e0c5ad66976448ed1b58c7e0efd36df57822aead3ea80b8b70995cd41c6c2f1"
+      url "https://github.com/fixed-labs/oss/releases/download/v0.1.4/rift_0.1.4_darwin_amd64.tar.gz"
+      sha256 "aac3f8602e9a9dc48e419343b78524445a6e63494374d71761aafd750adab6a6"
 
       define_method(:install) do
         bin.install "rift"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/fixed-labs/oss/releases/download/v0.1.3/rift_0.1.3_darwin_arm64.tar.gz"
-      sha256 "9c00d5fc34cfecc4211bec2c7a441c173203b91b9891ceb116e2bc0d0ec5ccce"
+      url "https://github.com/fixed-labs/oss/releases/download/v0.1.4/rift_0.1.4_darwin_arm64.tar.gz"
+      sha256 "488d9b589091a17b07e75ead3110a49369eae3cb54f77b097abe1c8a7a3a04e2"
 
       define_method(:install) do
         bin.install "rift"
@@ -29,15 +29,15 @@ class Rift < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/fixed-labs/oss/releases/download/v0.1.3/rift_0.1.3_linux_amd64.tar.gz"
-      sha256 "85c26ad5ecc6f5f46a9611d05f38c356acd7554daa51b5e1649e7f5ba7557fbe"
+      url "https://github.com/fixed-labs/oss/releases/download/v0.1.4/rift_0.1.4_linux_amd64.tar.gz"
+      sha256 "5255e896f153e41a04e944b5ad3b5a8c32e82e984a46179e692544ad5a323bf9"
       define_method(:install) do
         bin.install "rift"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/fixed-labs/oss/releases/download/v0.1.3/rift_0.1.3_linux_arm64.tar.gz"
-      sha256 "5c7b62f6ff174da0ee40642c1f880a1ce54d9c174543f7b494d3d2393f894bbe"
+      url "https://github.com/fixed-labs/oss/releases/download/v0.1.4/rift_0.1.4_linux_arm64.tar.gz"
+      sha256 "a69afdee5c8603e1361a44b5bf11f172e2069149eb84389376584e38475691a3"
       define_method(:install) do
         bin.install "rift"
       end
